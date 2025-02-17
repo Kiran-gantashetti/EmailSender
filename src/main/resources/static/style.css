@@ -1,0 +1,108 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f6f8fa;
+    color: #24292f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 28px;
+    color: #24292f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #586069;
+}
+
+input, textarea, select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+    background-color: #f6f8fa;
+    color: #24292f;
+    transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #0366d6;
+}
+
+button {
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Font customization options */
+.font-options {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+/* Response Message styles */
+#responseMessage {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    form {
+        gap: 12px;
+    }
+
+    button {
+        padding: 10px;
+    }
+}

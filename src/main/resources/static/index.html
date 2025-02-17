@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Sender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Email Sender</h1>
+        
+        <!-- Email Form -->
+        <form id="emailForm">
+            <label for="recipientEmail">Recipient Email:</label>
+            <input type="email" id="recipientEmail" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" required></textarea>
+
+            <div class="font-options">
+                <label for="fontSelect">Font Style:</label>
+                <select id="fontSelect">
+                    <option value="Arial">Arial</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Verdana">Verdana</option>
+                </select>
+
+                <label for="fontSizeSelect">Font Size:</label>
+                <select id="fontSizeSelect">
+                    <option value="14px">14px</option>
+                    <option value="16px">16px</option>
+                    <option value="18px">18px</option>
+                    <option value="20px">20px</option>
+                    <option value="22px">22px</option>
+                </select>
+
+                <label for="fontColor">Font Color:</label>
+                <input type="color" id="fontColor" value="#000000">
+            </div>
+
+            <label for="attachment">Attachment:</label>
+            <input type="file" id="attachment">
+
+            <button type="submit" id="sendEmailButton">Send Email</button>
+        </form>
+
+        <!-- Response Message -->
+        <div id="responseMessage"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
